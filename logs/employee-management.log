@@ -1,0 +1,227 @@
+2026-10-24 00:00:15 INFO  [main] c.e.e.EmployeeManagementApplication - Starting EmployeeManagementApplication using Java 25.0.1 with PID 25932 (C:\Users\SUSHMA KUMARI\Downloads\Employee-Management-FullStack-JDK17-Angular-MySQL-Redis\employee-management-fullstack\backend\target\classes started by SUSHMA KUMARI in C:\Users\SUSHMA KUMARI\Downloads\Employee-Management-FullStack-JDK17-Angular-MySQL-Redis)
+2026-10-24 00:00:15 DEBUG [main] c.e.e.EmployeeManagementApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2026-10-24 00:00:15 INFO  [main] c.e.e.EmployeeManagementApplication - No active profile set, falling back to 1 default profile: "dev"
+2026-10-24 00:00:16 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-24 00:00:16 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-24 00:00:17 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 307 ms. Found 2 JPA repository interfaces.
+2026-10-24 00:00:17 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-24 00:00:17 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-24 00:00:17 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.employeemanagement.employee.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-24 00:00:17 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.employeemanagement.task.EmployeeProcessingTaskRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-24 00:00:17 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2026-10-24 00:00:18 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-24 00:00:18 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-24 00:00:18 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2026-10-24 00:00:18 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-10-24 00:00:18 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2773 ms
+2026-10-24 00:00:18 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-24 00:00:18 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2026-10-24 00:00:18 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-10-24 00:00:19 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-24 00:00:19 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-24 00:00:20 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61be6051
+2026-10-24 00:00:20 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-24 00:00:20 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-24 00:00:21 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-24 00:00:21 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-24 00:00:23 INFO  [main] org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2026-10-24 00:00:23 INFO  [main] o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-10-24 00:00:23 INFO  [main] org.quartz.core.QuartzScheduler - Quartz Scheduler v2.5.0 created.
+2026-10-24 00:00:23 INFO  [main] org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2026-10-24 00:00:23 INFO  [main] org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.5.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-10-24 00:00:23 INFO  [main] org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2026-10-24 00:00:23 INFO  [main] org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.5.0
+2026-10-24 00:00:23 INFO  [main] org.quartz.core.QuartzScheduler - JobFactory set to: com.example.employeemanagement.config.QuartzConfig$1@5b3427c4
+2026-10-24 00:00:23 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-24 00:00:23 INFO  [main] o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2026-10-24 00:00:23 INFO  [main] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2026-10-24 00:00:23 INFO  [main] c.e.e.EmployeeManagementApplication - Started EmployeeManagementApplication in 9.099 seconds (process running for 10.278)
+2026-10-24 00:04:54 INFO  [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-10-24 00:04:54 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-24 00:04:54 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-24 00:04:54 INFO  [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2026-10-24 00:04:54 INFO  [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2026-10-24 00:04:54 INFO  [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-10-24 00:04:54 INFO  [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2026-10-24 00:04:54 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-24 00:04:54 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-10-24 00:04:54 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-10-24 00:04:59 INFO  [main] c.e.e.EmployeeManagementApplication - Starting EmployeeManagementApplication using Java 25.0.1 with PID 23624 (C:\Users\SUSHMA KUMARI\Downloads\Employee-Management-FullStack-JDK17-Angular-MySQL-Redis\employee-management-fullstack\backend\target\classes started by SUSHMA KUMARI in C:\Users\SUSHMA KUMARI\Downloads\Employee-Management-FullStack-JDK17-Angular-MySQL-Redis)
+2026-10-24 00:04:59 DEBUG [main] c.e.e.EmployeeManagementApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2026-10-24 00:04:59 INFO  [main] c.e.e.EmployeeManagementApplication - No active profile set, falling back to 1 default profile: "dev"
+2026-10-24 00:05:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-24 00:05:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-24 00:05:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 311 ms. Found 2 JPA repository interfaces.
+2026-10-24 00:05:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-24 00:05:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-24 00:05:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.employeemanagement.employee.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-24 00:05:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.employeemanagement.task.EmployeeProcessingTaskRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-24 00:05:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2026-10-24 00:05:01 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-24 00:05:01 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-24 00:05:01 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2026-10-24 00:05:01 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-10-24 00:05:01 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2753 ms
+2026-10-24 00:05:02 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-24 00:05:02 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2026-10-24 00:05:02 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-10-24 00:05:03 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-24 00:05:03 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-24 00:05:04 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@de0c402
+2026-10-24 00:05:04 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-24 00:05:04 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-24 00:05:05 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-24 00:05:05 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-24 00:05:07 INFO  [main] org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2026-10-24 00:05:07 INFO  [main] o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-10-24 00:05:07 INFO  [main] org.quartz.core.QuartzScheduler - Quartz Scheduler v2.5.0 created.
+2026-10-24 00:05:07 INFO  [main] org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2026-10-24 00:05:07 INFO  [main] org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.5.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-10-24 00:05:07 INFO  [main] org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2026-10-24 00:05:07 INFO  [main] org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.5.0
+2026-10-24 00:05:07 INFO  [main] org.quartz.core.QuartzScheduler - JobFactory set to: com.example.employeemanagement.config.QuartzConfig$1@283240b0
+2026-10-24 00:05:07 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-24 00:05:07 INFO  [main] o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2026-10-24 00:05:07 INFO  [main] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2026-10-24 00:05:07 INFO  [main] c.e.e.EmployeeManagementApplication - Started EmployeeManagementApplication in 9.033 seconds (process running for 10.325)
+2026-10-24 00:05:19 INFO  [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-10-24 00:05:19 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-24 00:05:19 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-24 00:05:19 INFO  [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2026-10-24 00:05:19 INFO  [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2026-10-24 00:05:19 INFO  [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-10-24 00:05:19 INFO  [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2026-10-24 00:05:19 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-24 00:05:19 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-10-24 00:05:19 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-10-24 00:05:22 INFO  [main] c.e.e.EmployeeManagementApplication - Starting EmployeeManagementApplication using Java 25.0.1 with PID 24860 (C:\Users\SUSHMA KUMARI\Downloads\Employee-Management-FullStack-JDK17-Angular-MySQL-Redis\employee-management-fullstack\backend\target\classes started by SUSHMA KUMARI in C:\Users\SUSHMA KUMARI\Downloads\Employee-Management-FullStack-JDK17-Angular-MySQL-Redis)
+2026-10-24 00:05:22 DEBUG [main] c.e.e.EmployeeManagementApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2026-10-24 00:05:22 INFO  [main] c.e.e.EmployeeManagementApplication - No active profile set, falling back to 1 default profile: "dev"
+2026-10-24 00:05:23 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-24 00:05:23 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-24 00:05:23 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 170 ms. Found 2 JPA repository interfaces.
+2026-10-24 00:05:23 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-24 00:05:23 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-24 00:05:23 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.employeemanagement.employee.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-24 00:05:23 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.employeemanagement.task.EmployeeProcessingTaskRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-24 00:05:23 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2026-10-24 00:05:24 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-24 00:05:24 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-24 00:05:24 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2026-10-24 00:05:24 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-10-24 00:05:24 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2027 ms
+2026-10-24 00:05:24 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-24 00:05:24 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2026-10-24 00:05:24 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-10-24 00:05:25 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-24 00:05:25 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-24 00:05:25 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45b08b17
+2026-10-24 00:05:25 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-24 00:05:25 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-24 00:05:26 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-24 00:05:26 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-24 00:05:28 INFO  [main] org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2026-10-24 00:05:28 INFO  [main] o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-10-24 00:05:28 INFO  [main] org.quartz.core.QuartzScheduler - Quartz Scheduler v2.5.0 created.
+2026-10-24 00:05:28 INFO  [main] org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2026-10-24 00:05:28 INFO  [main] org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.5.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-10-24 00:05:28 INFO  [main] org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2026-10-24 00:05:28 INFO  [main] org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.5.0
+2026-10-24 00:05:28 INFO  [main] org.quartz.core.QuartzScheduler - JobFactory set to: com.example.employeemanagement.config.QuartzConfig$1@5854e526
+2026-10-24 00:05:28 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-24 00:05:28 INFO  [main] o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2026-10-24 00:05:28 INFO  [main] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2026-10-24 00:05:28 INFO  [main] c.e.e.EmployeeManagementApplication - Started EmployeeManagementApplication in 6.781 seconds (process running for 7.753)
+2026-10-24 00:10:00 INFO  [quartzScheduler_Worker-1] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job started
+2026-10-24 00:10:01 INFO  [quartzScheduler_Worker-1] c.e.e.service.EmployeeCronJobService - No pending employee tasks found
+2026-10-24 00:10:01 INFO  [quartzScheduler_Worker-1] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job completed
+2026-10-24 00:15:00 INFO  [quartzScheduler_Worker-2] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job started
+2026-10-24 00:15:00 INFO  [quartzScheduler_Worker-2] c.e.e.service.EmployeeCronJobService - No pending employee tasks found
+2026-10-24 00:15:00 INFO  [quartzScheduler_Worker-2] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job completed
+2026-10-24 00:20:00 INFO  [quartzScheduler_Worker-3] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job started
+2026-10-24 00:20:00 INFO  [quartzScheduler_Worker-3] c.e.e.service.EmployeeCronJobService - No pending employee tasks found
+2026-10-24 00:20:00 INFO  [quartzScheduler_Worker-3] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job completed
+2026-10-24 00:25:00 INFO  [quartzScheduler_Worker-4] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job started
+2026-10-24 00:25:00 INFO  [quartzScheduler_Worker-4] c.e.e.service.EmployeeCronJobService - No pending employee tasks found
+2026-10-24 00:25:00 INFO  [quartzScheduler_Worker-4] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job completed
+2026-10-24 00:30:00 INFO  [quartzScheduler_Worker-5] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job started
+2026-10-24 00:30:00 INFO  [quartzScheduler_Worker-5] c.e.e.service.EmployeeCronJobService - No pending employee tasks found
+2026-10-24 00:30:00 INFO  [quartzScheduler_Worker-5] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job completed
+2026-10-24 00:35:00 INFO  [quartzScheduler_Worker-6] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job started
+2026-10-24 00:35:00 INFO  [quartzScheduler_Worker-6] c.e.e.service.EmployeeCronJobService - No pending employee tasks found
+2026-10-24 00:35:00 INFO  [quartzScheduler_Worker-6] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job completed
+2026-10-24 00:40:00 INFO  [quartzScheduler_Worker-7] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job started
+2026-10-24 00:40:00 INFO  [quartzScheduler_Worker-7] c.e.e.service.EmployeeCronJobService - No pending employee tasks found
+2026-10-24 00:40:00 INFO  [quartzScheduler_Worker-7] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job completed
+2026-10-24 00:45:00 INFO  [quartzScheduler_Worker-8] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job started
+2026-10-24 00:45:00 INFO  [quartzScheduler_Worker-8] c.e.e.service.EmployeeCronJobService - No pending employee tasks found
+2026-10-24 00:45:00 INFO  [quartzScheduler_Worker-8] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job completed
+2026-10-24 00:50:00 INFO  [quartzScheduler_Worker-9] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job started
+2026-10-24 00:50:00 INFO  [quartzScheduler_Worker-9] c.e.e.service.EmployeeCronJobService - No pending employee tasks found
+2026-10-24 00:50:00 INFO  [quartzScheduler_Worker-9] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job completed
+2026-10-24 00:55:00 INFO  [quartzScheduler_Worker-10] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job started
+2026-10-24 00:55:00 INFO  [quartzScheduler_Worker-10] c.e.e.service.EmployeeCronJobService - No pending employee tasks found
+2026-10-24 00:55:00 INFO  [quartzScheduler_Worker-10] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job completed
+2026-10-24 01:00:00 INFO  [quartzScheduler_Worker-1] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job started
+2026-10-24 01:00:00 INFO  [quartzScheduler_Worker-1] c.e.e.service.EmployeeCronJobService - No pending employee tasks found
+2026-10-24 01:00:00 INFO  [quartzScheduler_Worker-1] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job completed
+2026-10-24 01:05:00 INFO  [quartzScheduler_Worker-2] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job started
+2026-10-24 01:05:00 INFO  [quartzScheduler_Worker-2] c.e.e.service.EmployeeCronJobService - No pending employee tasks found
+2026-10-24 01:05:00 INFO  [quartzScheduler_Worker-2] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job completed
+2026-10-24 01:10:00 INFO  [quartzScheduler_Worker-3] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job started
+2026-10-24 01:10:00 INFO  [quartzScheduler_Worker-3] c.e.e.service.EmployeeCronJobService - No pending employee tasks found
+2026-10-24 01:10:00 INFO  [quartzScheduler_Worker-3] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job completed
+2026-10-24 01:15:00 INFO  [quartzScheduler_Worker-4] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job started
+2026-10-24 01:15:00 INFO  [quartzScheduler_Worker-4] c.e.e.service.EmployeeCronJobService - No pending employee tasks found
+2026-10-24 01:15:00 INFO  [quartzScheduler_Worker-4] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job completed
+2026-10-24 01:20:00 INFO  [quartzScheduler_Worker-5] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job started
+2026-10-24 01:20:00 INFO  [quartzScheduler_Worker-5] c.e.e.service.EmployeeCronJobService - No pending employee tasks found
+2026-10-24 01:20:00 INFO  [quartzScheduler_Worker-5] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job completed
+2026-10-24 01:25:00 INFO  [quartzScheduler_Worker-6] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job started
+2026-10-24 01:25:00 INFO  [quartzScheduler_Worker-6] c.e.e.service.EmployeeCronJobService - No pending employee tasks found
+2026-10-24 01:25:00 INFO  [quartzScheduler_Worker-6] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job completed
+2026-10-24 01:30:00 INFO  [quartzScheduler_Worker-7] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job started
+2026-10-24 01:30:00 INFO  [quartzScheduler_Worker-7] c.e.e.service.EmployeeCronJobService - No pending employee tasks found
+2026-10-24 01:30:00 INFO  [quartzScheduler_Worker-7] c.e.e.scheduler.EmployeeCronJob - Employee Cron Job completed

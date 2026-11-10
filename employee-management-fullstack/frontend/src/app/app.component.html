@@ -1,0 +1,17 @@
+<main class="page">
+<header class="topbar"><div class="logo">EM</div><div><p class="eyebrow">PEOPLE OPERATIONS</p><h1>Employee Management</h1></div><span class="pill">● Local workspace</span></header>
+<section class="intro"><div><p class="eyebrow">DIRECTORY OVERVIEW</p><h2>People make the business.</h2><p class="muted">Manage employee details from one workspace.</p></div><div class="stat"><span>Total employees</span><strong>{{employees.length}}</strong><small>Current directory results</small></div></section>
+<div *ngIf="success" class="notice success">{{success}}</div><div *ngIf="error" class="notice error">{{error}}</div>
+<section class="panel"><div class="section-heading"><div><p class="eyebrow">{{editingId===null?'NEW RECORD':'EDIT RECORD'}}</p><h2>{{editingId===null?'Add an employee':'Update employee'}}</h2></div><span class="eyebrow">01 / DETAILS</span></div>
+<form [formGroup]="form" (ngSubmit)="submit()"><div class="form-grid">
+<label>First name<input formControlName="firstName" placeholder="Asha"><small *ngIf="form.controls.firstName.touched&&form.controls.firstName.invalid">First name is required.</small></label>
+<label>Last name<input formControlName="lastName" placeholder="Sharma"><small *ngIf="form.controls.lastName.touched&&form.controls.lastName.invalid">Last name is required.</small></label>
+<label>Work email<input type="email" formControlName="email" placeholder="asha@company.com"><small *ngIf="form.controls.email.touched&&form.controls.email.invalid">Enter a valid email.</small></label>
+<label>Department<input formControlName="department" placeholder="Engineering"></label>
+<label>Annual salary (₹)<input type="number" min="0" formControlName="salary"></label></div>
+<div class="actions"><button class="primary" type="submit">{{editingId===null?'Create employee':'Save changes'}}</button><button class="secondary" type="button" (click)="resetForm()">Clear form</button></div></form></section>
+<section class="panel directory"><div class="section-heading directory-head"><div><p class="eyebrow">TEAM DIRECTORY</p><h2>Employees</h2></div><div class="filter"><input [(ngModel)]="filterDepartment" placeholder="Filter department" aria-label="Filter department"><button class="secondary" type="button" (click)="loadEmployees()">Search</button><button class="text-button" type="button" (click)="filterDepartment='';loadEmployees()">Reset</button></div></div>
+<div *ngIf="loading" class="empty">Loading employee records…</div><div *ngIf="!loading&&employees.length===0" class="empty"><strong>No employees found</strong><p>Add an employee above or clear your filter.</p></div>
+<div class="table-wrap" *ngIf="!loading&&employees.length>0"><table><thead><tr><th>EMPLOYEE</th><th>DEPARTMENT</th><th>EMAIL</th><th>SALARY</th><th>ACTIONS</th></tr></thead><tbody><tr *ngFor="let e of employees"><td><div class="person"><span class="avatar">{{e.firstName.charAt(0)}}{{e.lastName.charAt(0)}}</span><div><strong>{{e.firstName}} {{e.lastName}}</strong><small>#{{e.id}}</small></div></div></td><td><span class="dept">{{e.department}}</span></td><td>{{e.email}}</td><td class="salary">{{e.salary|currency:'INR':'symbol':'1.0-0'}}</td><td><button class="action" type="button" (click)="edit(e)">Edit</button> <button class="action delete" type="button" (click)="remove(e)">Delete</button></td></tr></tbody></table></div>
+<footer class="panel-footer"><span>EMPLOYEE DATA · LIVE API</span><span>{{employees.length}} record(s)</span></footer></section><footer class="page-footer">SPRING BOOT + ANGULAR · LOCAL PRACTICE PROJECT</footer>
+</main>
